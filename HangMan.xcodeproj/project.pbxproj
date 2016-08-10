@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		CE15A9521D58F08200C962BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE15A9511D58F08200C962BC /* AppDelegate.swift */; };
-		CE15A9541D58F08200C962BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE15A9531D58F08200C962BC /* ViewController.swift */; };
 		CE15A9571D58F08200C962BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE15A9551D58F08200C962BC /* Main.storyboard */; };
 		CE15A95A1D58F08200C962BC /* HangMan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE15A9581D58F08200C962BC /* HangMan.xcdatamodeld */; };
-		CE15A95C1D58F08200C962BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE15A95B1D58F08200C962BC /* Assets.xcassets */; };
 		CE15A95F1D58F08200C962BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE15A95D1D58F08200C962BC /* LaunchScreen.storyboard */; };
+		CE15A9681D58F26900C962BC /* MainMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE15A9671D58F26900C962BC /* MainMenuVC.swift */; };
+		CE15A96A1D58F43500C962BC /* GuessWordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE15A9691D58F43500C962BC /* GuessWordVC.swift */; };
+		CE4941471D58FD3200D69839 /* DifficultyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4941461D58FD3200D69839 /* DifficultyVC.swift */; };
+		CE4941491D5903DB00D69839 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4941481D5903DB00D69839 /* GameVC.swift */; };
+		CE49414D1D59055000D69839 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE49414C1D59055000D69839 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE15A94E1D58F08200C962BC /* HangMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HangMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE15A9511D58F08200C962BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE15A9531D58F08200C962BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE15A9561D58F08200C962BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE15A9591D58F08200C962BC /* HangMan.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HangMan.xcdatamodel; sourceTree = "<group>"; };
-		CE15A95B1D58F08200C962BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE15A95E1D58F08200C962BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE15A9601D58F08200C962BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE15A9671D58F26900C962BC /* MainMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuVC.swift; sourceTree = "<group>"; };
+		CE15A9691D58F43500C962BC /* GuessWordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuessWordVC.swift; sourceTree = "<group>"; };
+		CE4941461D58FD3200D69839 /* DifficultyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DifficultyVC.swift; sourceTree = "<group>"; };
+		CE4941481D5903DB00D69839 /* GameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
+		CE49414C1D59055000D69839 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,26 @@
 		CE15A9501D58F08200C962BC /* HangMan */ = {
 			isa = PBXGroup;
 			children = (
+				CE15A9661D58F1DA00C962BC /* Controller */,
 				CE15A9511D58F08200C962BC /* AppDelegate.swift */,
-				CE15A9531D58F08200C962BC /* ViewController.swift */,
 				CE15A9551D58F08200C962BC /* Main.storyboard */,
-				CE15A95B1D58F08200C962BC /* Assets.xcassets */,
 				CE15A95D1D58F08200C962BC /* LaunchScreen.storyboard */,
 				CE15A9601D58F08200C962BC /* Info.plist */,
 				CE15A9581D58F08200C962BC /* HangMan.xcdatamodeld */,
+				CE49414C1D59055000D69839 /* Assets.xcassets */,
 			);
 			path = HangMan;
+			sourceTree = "<group>";
+		};
+		CE15A9661D58F1DA00C962BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE15A9671D58F26900C962BC /* MainMenuVC.swift */,
+				CE15A9691D58F43500C962BC /* GuessWordVC.swift */,
+				CE4941461D58FD3200D69839 /* DifficultyVC.swift */,
+				CE4941481D5903DB00D69839 /* GameVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE15A95F1D58F08200C962BC /* LaunchScreen.storyboard in Resources */,
-				CE15A95C1D58F08200C962BC /* Assets.xcassets in Resources */,
+				CE49414D1D59055000D69839 /* Assets.xcassets in Resources */,
 				CE15A9571D58F08200C962BC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,9 +156,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE15A96A1D58F43500C962BC /* GuessWordVC.swift in Sources */,
 				CE15A95A1D58F08200C962BC /* HangMan.xcdatamodeld in Sources */,
-				CE15A9541D58F08200C962BC /* ViewController.swift in Sources */,
 				CE15A9521D58F08200C962BC /* AppDelegate.swift in Sources */,
+				CE15A9681D58F26900C962BC /* MainMenuVC.swift in Sources */,
+				CE4941491D5903DB00D69839 /* GameVC.swift in Sources */,
+				CE4941471D58FD3200D69839 /* DifficultyVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +323,7 @@
 				CE15A9651D58F08200C962BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
